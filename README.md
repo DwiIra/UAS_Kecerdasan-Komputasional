@@ -7,60 +7,60 @@ Klasifikasi gambar<br>
 Deteksi objek<br>
 Pemrosesan teks (NLP)<br>
 <br>
-CNN bekerja dengan menangkap fitur lokal dari input (misalnya piksel gambar atau kata dalam teks) dan menyusunnya menjadi representasi fitur yang berguna untuk klasifikasi atau prediksi.
+CNN bekerja dengan menangkap fitur lokal dari input (misalnya piksel gambar atau kata dalam teks) dan menyusunnya menjadi representasi fitur yang berguna untuk klasifikasi atau prediksi.<br>
 
 # Komponen Utama CNN
-1. Input Layer
-Berisi data mentah, seperti:
-Gambar (misalnya ukuran 28x28 piksel)
-Urutan teks (sudah diubah menjadi angka lewat tokenizer)
+1. Input Layer<br>
+Berisi data mentah, seperti:<br>
+Gambar (misalnya ukuran 28x28 piksel)<br>
+Urutan teks (sudah diubah menjadi angka lewat tokenizer)<br>
 
-2. Convolutional Layer
-Fungsi utama: mengekstrak fitur dari input.
-Menggunakan filter (kernel) kecil yang bergerak di atas input (disebut convolution).
-Mendeteksi pola seperti garis, tepi, bentuk, dll.
-Contoh:
-Filter 3x3 bisa mendeteksi garis horizontal/vertikal dalam gambar.
+2. Convolutional Layer<br>
+Fungsi utama: mengekstrak fitur dari input.<br>
+Menggunakan filter (kernel) kecil yang bergerak di atas input (disebut convolution).<br>
+Mendeteksi pola seperti garis, tepi, bentuk, dll.<br>
+Contoh:<br>
+Filter 3x3 bisa mendeteksi garis horizontal/vertikal dalam gambar.<br>
 
-3. Activation Function (ReLU)
-Fungsi aktivasi seperti ReLU (Rectified Linear Unit) diterapkan setelah convolution.
-Tujuannya:
-Menghilangkan nilai negatif → membuat jaringan belajar lebih cepat dan efisien.
+3. Activation Function (ReLU)<br>
+Fungsi aktivasi seperti ReLU (Rectified Linear Unit) diterapkan setelah convolution.<br>
+Tujuannya:<br>
+Menghilangkan nilai negatif → membuat jaringan belajar lebih cepat dan efisien.<br>
 
-4. Pooling Layer (MaxPooling)
-Tujuan: mengurangi ukuran data dan menjaga fitur penting.
-Contoh: MaxPooling 2x2 mengambil nilai maksimum dari tiap blok 2x2.
-Mengurangi dimensi → mempercepat proses → mencegah overfitting.
+4. Pooling Layer (MaxPooling)<br>
+Tujuan: mengurangi ukuran data dan menjaga fitur penting.<br>
+Contoh: MaxPooling 2x2 mengambil nilai maksimum dari tiap blok 2x2.<br>
+Mengurangi dimensi → mempercepat proses → mencegah overfitting.<br>
 
-5. Flatten Layer
-Mengubah data 2D/3D hasil dari layer sebelumnya menjadi vektor 1D agar bisa masuk ke lapisan Dense.
+5. Flatten Layer<br>
+Mengubah data 2D/3D hasil dari layer sebelumnya menjadi vektor 1D agar bisa masuk ke lapisan Dense.<br>
 
-6. Fully Connected Layer (Dense)
-Menyusun semua neuron untuk memproses dan menggabungkan informasi.
-Biasanya terdiri dari 1 atau lebih layer Dense.
+6. Fully Connected Layer (Dense)<br>
+Menyusun semua neuron untuk memproses dan menggabungkan informasi.<br>
+Biasanya terdiri dari 1 atau lebih layer Dense.<br>
 
-7. Output Layer
-Untuk klasifikasi binary → 1 neuron dengan aktivasi sigmoid
-Untuk multi-class classification → beberapa neuron dengan softmax
+7. Output Layer<br>
+Untuk klasifikasi binary → 1 neuron dengan aktivasi sigmoid<br>
+Untuk multi-class classification → beberapa neuron dengan softmax<br>
 
-CNN untuk Teks (NLP)
-CNN juga digunakan dalam teks, terutama untuk klasifikasi seperti:
-Deteksi hoaks
-Sentiment analysis
-Klasifikasi topik
+CNN untuk Teks (NLP)<br>
+CNN juga digunakan dalam teks, terutama untuk klasifikasi seperti:<br>
+Deteksi hoaks<br>
+Sentiment analysis<br>
+Klasifikasi topik<br>
 
-Langkahnya:
-Tokenisasi teks → diubah ke urutan angka
-Embedding → ubah angka jadi vektor makna
-Conv1D → menangkap pola kata
-Pooling → ringkas informasi
-Dense → klasifikasi
+Langkahnya:<br>
+Tokenisasi teks → diubah ke urutan angka<br>
+Embedding → ubah angka jadi vektor makna<br>
+Conv1D → menangkap pola kata<br>
+Pooling → ringkas informasi<br>
+Dense → klasifikasi<br>
 
-Kelebihan CNN:
-Otomatis belajar fitur penting dari data
-Kuat dalam mengenali pola visual/spasial
-Efisien dibanding metode manual (misalnya ekstraksi fitur dengan tangan)
+Kelebihan CNN:<br>
+Otomatis belajar fitur penting dari data<br>
+Kuat dalam mengenali pola visual/spasial<br>
+Efisien dibanding metode manual (misalnya ekstraksi fitur dengan tangan)<br>
 
-Kekurangan CNN:
-Membutuhkan banyak data dan waktu training
+Kekurangan CNN:<br>
+Membutuhkan banyak data dan waktu training<br>
 Tidak ideal untuk data urutan panjang seperti kalimat panjang (lebih cocok pakai LSTM atau Transformer)
