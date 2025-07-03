@@ -43,7 +43,7 @@ Biasanya terdiri dari 1 atau lebih layer Dense.<br>
 Untuk klasifikasi binary → 1 neuron dengan aktivasi sigmoid<br>
 Untuk multi-class classification → beberapa neuron dengan softmax<br>
 
-CNN untuk Teks (NLP)<br>
+# CNN untuk Teks (NLP)<br>
 CNN juga digunakan dalam teks, terutama untuk klasifikasi seperti:<br>
 Deteksi hoaks<br>
 Sentiment analysis<br>
