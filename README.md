@@ -1,11 +1,12 @@
 # UAS_Kecerdasan-Komputasional
 
-Apa Itu CNN (Convolutional Neural Network)?
-CNN adalah salah satu arsitektur deep learning yang dirancang untuk mengenali pola spasial dan temporal dalam data. CNN sangat populer untuk:
-Klasifikasi gambar
-Deteksi objek
-Pemrosesan teks (NLP)
-
+Apa Itu CNN (Convolutional Neural Network)? <br>
+CNN adalah salah satu arsitektur deep learning yang dirancang untuk mengenali pola spasial dan temporal dalam data. <br>
+CNN sangat populer untuk:<br>
+Klasifikasi gambar<br>
+Deteksi objek<br>
+Pemrosesan teks (NLP)<br>
+<br>
 CNN bekerja dengan menangkap fitur lokal dari input (misalnya piksel gambar atau kata dalam teks) dan menyusunnya menjadi representasi fitur yang berguna untuk klasifikasi atau prediksi.
 
 # Komponen Utama CNN
